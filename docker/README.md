@@ -68,7 +68,7 @@ roscore                                # panel 1, déjalo abierto
 rosrun turtlesim turtlesim_node        # panel 2
 ```
 
-En ambos casos debe aparecer una ventana azul con una tortuga. Sigue con la [guía de ROS 1](../ros1/GUIA_ROS1.md).
+En ambos casos debe aparecer una ventana azul con una tortuga. Sigue con el [curso de ROS 1](../ros1/README.md).
 
 ## 4. Terminal desde PowerShell (sin GUI)
 

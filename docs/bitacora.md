@@ -2,6 +2,8 @@
 
 ## 2026-11-07
 
+Leccion completa: [Leccion 1](../ros1/lecciones/leccion-01-turtlesim/README.md)
+
 **Hecho**
 - Entorno Docker con ROS 2 Jazzy y ROS 1 Noetic, con escritorio en el navegador.
 - ROS 1, Lección 1: `roscore`, `turtlesim`, `turtle_teleop_key`, `rostopic`, `rosnode` y `rqt_graph`.
