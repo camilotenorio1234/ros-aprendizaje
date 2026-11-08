@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>curso_ros1</name>
+  <version>0.1.0</version>
+  <description>Ejemplos para aprender ROS 1 (Noetic) desde cero</description>
+  <maintainer email="tu@correo.com">Alumno</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rospy_tutorials</depend>
+  <exec_depend>turtlesim</exec_depend>
+</package>

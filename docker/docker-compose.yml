@@ -1,0 +1,36 @@
+name: ros-aprendizaje
+
+# Entorno de aprendizaje ROS 1 (Noetic) + ROS 2 (Jazzy)
+# Cada servicio es un escritorio Ubuntu completo accesible desde el navegador.
+#
+#   ROS 2 Jazzy  -> http://127.0.0.1:6080   (Ubuntu 24.04)
+#   ROS 1 Noetic -> http://127.0.0.1:6081   (Ubuntu 20.04)
+#   Usuario: ubuntu   Contrasena: ubuntu
+
+services:
+  ros2:
+    image: tiryoh/ros2-desktop-vnc:jazzy
+    container_name: ros2-jazzy
+    ports:
+      - "6080:80"
+    shm_size: "1gb"
+    security_opt:
+      - seccomp=unconfined
+    environment:
+      - ROS_DOMAIN_ID=0
+    volumes:
+      # Tu codigo vive en Windows (carpeta ros2/ros2_ws del repo) y se ve dentro del contenedor
+      - "../ros2/ros2_ws:/home/ubuntu/ros2_ws"
+    restart: unless-stopped
+
+  ros1:
+    image: tiryoh/ros-desktop-vnc:noetic
+    container_name: ros1-noetic
+    ports:
+      - "6081:80"
+    shm_size: "1gb"
+    security_opt:
+      - seccomp=unconfined
+    volumes:
+      - "../ros1/catkin_ws:/home/ubuntu/catkin_ws"
+    restart: unless-stopped

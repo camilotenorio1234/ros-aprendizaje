@@ -1,0 +1,15 @@
+# Compilacion de ROS
+build/
+install/
+log/
+devel/
+
+# Logs de los .bat
+log-*.txt
+
+# Python / sistema
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+README.old.md

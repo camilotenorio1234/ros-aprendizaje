@@ -1,0 +1,5 @@
+<launch>
+  <!-- Abre turtlesim y la hace dibujar un circulo -->
+  <node pkg="turtlesim"  type="turtlesim_node" name="sim"/>
+  <node pkg="curso_ros1" type="mover_tortuga.py" name="mover" output="screen"/>
+</launch>

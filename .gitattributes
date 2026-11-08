@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
+# Los scripts de ROS corren en Linux: deben conservar fin de linea LF
+# (si Git en Windows los convierte a CRLF, el shebang falla)
 * text=auto
+*.py     text eol=lf
+*.launch text eol=lf
+*.xml    text eol=lf
+*.txt    text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
+*.bat    text eol=crlf
+*.png    binary

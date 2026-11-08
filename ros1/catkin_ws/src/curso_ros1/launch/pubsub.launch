@@ -1,0 +1,7 @@
+<launch>
+  <!-- Arranca talker y listener con un solo comando:
+       roslaunch curso_ros1 pubsub.launch
+       (roslaunch tambien arranca roscore si no existe) -->
+  <node pkg="curso_ros1" type="talker.py"   name="talker"   output="screen"/>
+  <node pkg="curso_ros1" type="listener.py" name="listener" output="screen"/>
+</launch>
