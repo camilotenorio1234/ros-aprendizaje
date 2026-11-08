@@ -22,4 +22,11 @@ Leccion completa: [Leccion 1](../ros1/lecciones/leccion-01-turtlesim/README.md)
 - Ejecuté `rqt_graph` en el panel donde corría el teclado y el nodo terminó: un panel = un proceso.
 
 **Siguiente**
-- Lección 2: compilar el workspace `catkin_ws` y el paquete `curso_ros1`.
+- Lección 2: compilar el workspace `catkin_ws` y el paquete `curso_ros1`. (Hecha, ver abajo)
+
+**Leccion 2** ([ver](../ros1/lecciones/leccion-02-workspace/README.md))
+- Compile el workspace `catkin_ws` con `catkin_make` y active el workspace con `source devel/setup.bash`.
+- `rospack find curso_ros1` encontro el paquete; cree `mi_paquete` con `catkin_create_pkg`.
+- Aprendido: un workspace tiene `src/`, `build/` y `devel/`; `package.xml` declara dependencias y `CMakeLists.txt` lo que se instala.
+- Problema: el contenedor viejo apuntaba a la carpeta anterior (`ls: cannot open directory '.'`). Solucion: `docker rm -f ros1-noetic` y recrearlo con `docker compose up -d ros1` desde la carpeta nueva.
+- Siguiente: Leccion 3 (publicador y suscriptor en Python).

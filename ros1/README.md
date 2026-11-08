@@ -7,14 +7,14 @@ Cada leccion tiene su carpeta con un README explicado paso a paso, con salidas e
 | # | Leccion | Estado |
 |---|---|---|
 | 1 | [Tu primer sistema ROS: nodos, topics y turtlesim](lecciones/leccion-01-turtlesim/README.md) | Hecha |
-| 2 | Workspace catkin y compilar el paquete `curso_ros1` | Pendiente |
+| 2 | [Workspace catkin y compilar paquetes](lecciones/leccion-02-workspace/README.md) | Hecha |
 | 3 | Publicador y suscriptor en Python | Pendiente |
 | 4 | Controlar la tortuga con codigo | Pendiente |
 | 5 | Servicios | Pendiente |
 | 6 | Launch files y parametros | Pendiente |
 | 7 | Herramientas utiles (`rqt`, `rosbag`...) | Pendiente |
 
-Los apuntes de las lecciones pendientes estan en [`borrador-lecciones-2-a-7.md`](borrador-lecciones-2-a-7.md).
+Los apuntes de las lecciones pendientes estan en [`borrador-lecciones-3-a-7.md`](borrador-lecciones-3-a-7.md).
 El codigo de ejemplo esta en [`catkin_ws/src/curso_ros1`](catkin_ws/src/curso_ros1).
 
 ## Como trabajar
@@ -48,10 +48,10 @@ Un robot es muchos nodos conversando: camara, motores, planificador...
 | Mensaje o sintoma | Causa y solucion |
 |---|---|
 | `command not found: rosrun` | Falta `source /opt/ros/noetic/setup.bash` en esa terminal |
-| `Package 'curso_ros1' not found` | Falta `source ~/catkin_ws/devel/setup.bash` |
+| `Package 'curso_ros1' not found` | Falta `source ~/catkin_ws/devel/setup.bash` (Leccion 2) |
 | `Unable to contact my own server` | `roscore` no esta corriendo |
 | `Permission denied` al ejecutar un `.py` | Hacer `chmod +x` al script |
-| `catkin_make` falla por un enlace simbolico | Ver la Leccion 2 (se crea el archivo a mano) |
+| `catkin_make` falla por un enlace simbolico | Ver la [Leccion 2](lecciones/leccion-02-workspace/README.md) (se crea el archivo a mano) |
 | El nodo corre pero no recibe nada | El topic tiene otro nombre: revisa `rostopic list` |
 
 ## Hacia los humanoides

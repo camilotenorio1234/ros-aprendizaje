@@ -22,7 +22,7 @@ Aprendiendo **ROS 1** y **ROS 2** desde cero con Docker: guias, ejemplos de codi
 | # | Leccion | Estado |
 |---|---|---|
 | 1 | [Tu primer sistema ROS: nodos, topics y turtlesim](ros1/lecciones/leccion-01-turtlesim/README.md) | Hecha |
-| 2 | Workspace catkin y compilar `curso_ros1` | Pendiente |
+| 2 | [Workspace catkin y compilar paquetes](ros1/lecciones/leccion-02-workspace/README.md) | Hecha |
 | 3 | Publicador y suscriptor en Python | Pendiente |
 | 4 | Controlar la tortuga con codigo | Pendiente |
 | 5 | Servicios | Pendiente |
@@ -54,7 +54,8 @@ Detalles, capturas y solucion de problemas: [`docker/README.md`](docker/README.m
 
 - [x] Entorno Docker con ROS 1 y ROS 2
 - [x] ROS 1, Leccion 1: nodos, topics y turtlesim
-- [ ] ROS 1, Lecciones 2 a 7
+- [x] ROS 1, Leccion 2: workspace catkin y paquetes
+- [ ] ROS 1, Lecciones 3 a 7
 - [ ] ROS 2: nodos, topics, servicios y `colcon`
 - [ ] URDF, `tf`, RViz y Gazebo
 - [ ] `ros_control` y MoveIt 2

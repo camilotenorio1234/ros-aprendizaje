@@ -1,6 +1,6 @@
 # Leccion 1: tu primer sistema ROS (nodos, topics y turtlesim)
 
-[← Indice de ROS 1](../../README.md) · Siguiente: Leccion 2 (pendiente)
+[← Indice de ROS 1](../../README.md) · [Siguiente: Leccion 2 →](../leccion-02-workspace/README.md)
 
 ## Objetivo
 
@@ -329,4 +329,4 @@ Todo el sistema funcionando: `roscore`, la simulacion, el teclado, el panel de i
 - Quien **publica** envia mensajes; quien **escucha** (se suscribe) los recibe.
 - Puedes inspeccionar y hasta "hablar" con un sistema en marcha sin tocar su codigo.
 
-**Siguiente:** Leccion 2, compilar un workspace catkin y el paquete de ejemplos `curso_ros1`.
+**Siguiente:** [Leccion 2](../leccion-02-workspace/README.md), compilar un workspace catkin y el paquete de ejemplos `curso_ros1`.

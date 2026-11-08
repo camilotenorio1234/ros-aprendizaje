@@ -1,37 +1,8 @@
-# Borrador: lecciones 2 a 7 (aun sin realizar)
+# Borrador: lecciones 3 a 7 (aun sin realizar)
 
 Apuntes preparados para las proximas lecciones. Cuando hagamos cada una, se convierte en
 su propia carpeta `lecciones/leccion-NN-.../README.md` con capturas y salidas reales,
-igual que la [Leccion 1](lecciones/leccion-01-turtlesim/README.md).
-
----------------------------------------------------------------------------
-## Leccion 2 - Workspace y compilar el paquete de ejemplos
-
-Un workspace catkin es la carpeta donde viven y se compilan tus paquetes.
-Ya tienes `~/catkin_ws/src/curso_ros1` con ejemplos.
-
-IMPORTANTE (una sola vez): la carpeta esta montada desde Windows y ahi no se
-pueden crear enlaces simbolicos, asi que creamos el archivo a mano:
-
-    cp --remove-destination /opt/ros/noetic/share/catkin/cmake/toplevel.cmake ~/catkin_ws/src/CMakeLists.txt
-
-Compilar:
-
-    cd ~/catkin_ws
-    catkin_make
-    source devel/setup.bash           # hacerlo tras CADA compilacion
-    rospack find curso_ros1           # debe mostrar la ruta del paquete
-
-Si ves "Permission denied" al ejecutar un script:
-`chmod +x ~/catkin_ws/src/curso_ros1/scripts/*.py`
-
-Estructura de un paquete:
-
-    curso_ros1/
-    ├── package.xml        <- nombre, dependencias
-    ├── CMakeLists.txt     <- como se compila / instala
-    ├── scripts/           <- nodos en Python
-    └── launch/            <- arranque de varios nodos
+igual que la [Leccion 1](lecciones/leccion-01-turtlesim/README.md) y la [Leccion 2](lecciones/leccion-02-workspace/README.md).
 
 ---------------------------------------------------------------------------
 ## Leccion 3 - Publicador y suscriptor (topics)

@@ -13,3 +13,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 README.old.md
+
+# Marca que catkin crea en el workspace
+.catkin_workspace
